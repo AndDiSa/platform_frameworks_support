@@ -1,0 +1,18 @@
+--- fragment/tests/java/android/support/v4/app/FragmentLifecycleTest.java
++++ fragment/tests/java/android/support/v4/app/FragmentLifecycleTest.java
+@@ -26,6 +26,7 @@
+ import static junit.framework.Assert.assertTrue;
+ 
+ import static org.junit.Assert.assertNotEquals;
++import static org.junit.Assert.fail;
+ import static org.mockito.Mockito.mock;
+ import static org.mockito.Mockito.times;
+ import static org.mockito.Mockito.verify;
+@@ -48,6 +49,7 @@
+ import android.support.v4.app.test.EmptyFragmentTestActivity;
+ import android.support.v4.app.test.FragmentTestActivity;
+ import android.support.v4.view.ViewCompat;
++import android.util.Pair;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
