@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+-keep class android.support.v7.widget.SearchView { *; }
+
 # CoordinatorLayout resolves the behaviors of its child components with reflection.
 -keep public class * extends android.support.design.widget.CoordinatorLayout$Behavior {
     public <init>(android.content.Context, android.util.AttributeSet);
